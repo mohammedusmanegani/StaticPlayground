@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML, CSS, JS IDE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- First row: HTML, CSS, JS editors -->
+    <div class="row">
+      <div class="column">
+        <h3>HTML</h3>
+        <textarea id="htmlEditor" placeholder="Write HTML here..."></textarea>
+      </div>
+      <div class="column">
+        <h3>CSS</h3>
+        <textarea id="cssEditor" placeholder="Write CSS here..."></textarea>
+      </div>
+      <div class="column">
+        <h3>JavaScript</h3>
+        <textarea id="jsEditor" placeholder="Write JavaScript here..."></textarea>
+      </div>
+    </div>
+    <!-- Second row: Browser output and Console output -->
+    <div class="row">
+      <div class="column">
+        <h3>Browser Output</h3>
+        <iframe id="outputWindow"></iframe>
+      </div>
+      <div class="column">
+        <h3>JS Console Output</h3>
+        <div id="consoleOutput"></div>
+      </div>
+    </div>
+    <button id="runButton">Run</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
